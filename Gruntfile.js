@@ -64,6 +64,7 @@ module.exports = function(grunt) {
 				options: {
 					middleware: function (connect) {
 						return [
+							require('cors')(),
 							require('connect-livereload')({ port: 35729 }),
 							connect.static(require('path').resolve('.tmp')),
 							connect.static(require('path').resolve(paths.app))
