@@ -1,0 +1,5 @@
+sitetitle: 
+navigation:
+  home:
+    title: 'Startseite'
+    link: '/index.html'

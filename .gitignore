@@ -1,0 +1,33 @@
+# Bower
+application/components
+
+# Node specific #
+lib-cov
+*.seed
+*.log
+*.dat
+*.out
+*.pid
+*.gz
+pids
+logs
+npm-debug.log
+node_modules/
+
+# Grunt (tmp, dist)
+.tmp
+templates
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Sublime specific #
+sftp-config*
+*.sublime-*

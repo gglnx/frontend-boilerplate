@@ -1,0 +1,17 @@
+- var currentArray = current.split('.')
+- var currentPage = currentArray[currentArray.length-1]
+
+mixin breadcrumbItem(items, current, level)
+	each nav, id in items
+		if ( id == current[level] )
+			li: a(href=nav.link, title=nav.title)= nav.title
+			if ( nav.items )
+				- level++;
+				+breadcrumbItem(nav.items, current, level)
+
+if ( current )
+	nav#breadcrumb(role="navigation")
+		h2#breadcrumb-label Aktuelle Position auf der Webseite
+		ul(aria-labelledby="breadcrumb-label")
+			li: a(href="/index.html", title="Startseite") Startseite
+			+breadcrumbItem(navigation, currentArray, 0)

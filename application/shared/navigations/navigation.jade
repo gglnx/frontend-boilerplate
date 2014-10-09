@@ -1,0 +1,12 @@
+- var currentArray = current.split('.')
+- var currentPage = currentArray[currentArray.length-1]
+
+h2 Navigation
+ul: each nav, id in navigation
+	if (nav.hide!=true)
+		li(class=id==currentArray[0]?'active':'')
+			span
+				a(href=nav.link, title=nav.title)= nav.title
+				if ( nav.items )
+					ul.submenu: each subNav, subId in nav.items
+						li: a(href=subNav.link, title=subNav.title)= subNav.title
