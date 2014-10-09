@@ -234,7 +234,7 @@ module.exports = function(grunt) {
 						'images/{,*/}*.{webp,gif}',
 						'components/requirejs/require.js',
 						'fonts/*.{eot,svg,ttf,woff}',
-						'components/bootstrap/dist/fonts/*.{eot,svg,ttf,woff}'
+						'components/bootstrap/fonts/*.{eot,svg,ttf,woff}'
 					]
 				}]
 			},
